@@ -108,7 +108,7 @@ function MacLib:Window(Settings)
 	local base = Instance.new("Frame")
     base.Name = "Base"
     base.AnchorPoint = Vector2.new(0.5, 0.5)
-    base.BackgroundColor3 = Color3.fromRGB(30, 0, 50)
+    base.BackgroundColor3 = Color3.fromRGB(25, 0, 5)
     base.ClipsDescendants = true
     base.BackgroundTransparency = 0
     base.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -120,9 +120,9 @@ function MacLib:Window(Settings)
     -- Add modern gradient background with subtle effect
     local gradient = Instance.new("UIGradient")
 gradient.Color = ColorSequence.new{
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 0, 90)),
-    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(30, 0, 50)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 0, 40))
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(60, 0, 10)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(25, 0, 5)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(15, 0, 3))
 }
     gradient.Rotation = 135
     gradient.Parent = base
@@ -237,9 +237,9 @@ gradient.Color = ColorSequence.new{
 	local baseUIStroke = Instance.new("UIStroke")
 	baseUIStroke.Name = "BaseUIStroke"
 	baseUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-	baseUIStroke.Color = Color3.fromRGB(70, 70, 75)
+	baseUIStroke.Color = Color3.fromRGB(200, 0, 30)
 	baseUIStroke.Transparency = 0.5
-	baseUIStroke.Thickness = 1.5
+	baseUIStroke.Thickness = 1.6
 	baseUIStroke.Parent = base
 
 	local sidebar = Instance.new("Frame")
